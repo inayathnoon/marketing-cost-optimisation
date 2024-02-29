@@ -1,0 +1,102 @@
+Column Name,Data Type,Description
+date,Date,Origin Date. Date of customer's first gift to ACE YYMM format (Year/Month).
+source,Nominal,Origin Source - (Only 1st 3 bytes are used) - Defaulted to 00000 for conversion - Code indicating which mailing list the customer was originally acquired from - A nominal or symbolic field.
+title,Nominal,"Customer title code (e.g., 000 = _, 001 = MR., 001001 = MESSRS., etc.)"
+state,Nominal,State abbreviation (a nominal/symbolic field)
+zip,Nominal,Zipcode (a nominal/symbolic field)
+mailcode,Binary,"Mail Code ("" "" = Address is OK, B = Bad Address)"
+has_chapter,Binary,"E-ACE State or ACE State. Indicates whether the customer lives in a state served by the organization's E-ACE chapter (P = ACE State, E = E-ACE State (Northeastern US))"
+dob,Date,"Date of birth (YYMM, Year/Month format.)"
+noexch,Binary,"Do Not Exchange Flag (For list rental) (_ = can be exchanged, X = do not exchange)"
+recinhse,Binary,"In House File Flag (_ = Not an In House Record, X = customer has given to ACE's In House program)"
+recp3,Binary,"P3 File Flag (_ = Not a P3 Record, X = customer has given to ACE's P3 program)"
+recpgvg,Binary,"Planned Giving File Flag (_ = Not a Planned Giving Record, X = Planned Giving Record)"
+recsweep,Binary,"Sweepstakes file flag (_ = Not a Sweepstakes Record, X = Sweepstakes Record)"
+mdmaud,Nominal,"The Major customer Matrix code. Describes frequency and amount of giving. An RFA (recency/frequency/monetary) field. Includes bytes for recency of giving, frequency of giving, amount of giving, and a filler."
+domain,Nominal,Domain/Cluster code. A nominal or symbolic field. Includes bytes for urbanicity level and socio-economic status of the neighborhood.
+cluster,Nominal,"Code indicating which cluster group the customer falls into, unique in terms of socio-economic status, urbanicity, ethnicity, and other demographic characteristics. A nominal or symbolic field."
+age,Continuous,Overlay Age (0 = missing)
+ageflag,Binary,"Age Flag (E = Exact, I = Inferred from Date of Birth Field)"
+homeownr,Binary,"Home Owner Flag (H = Home owner, U = Unknown)"
+child03,Nominal,"Presence of Children age 0-3 (B = Both, F = Female, M = Male)"
+child07,Nominal,Presence of Children age 4-7
+child12,Nominal,Presence of Children age 8-12
+child18,Nominal,Presence of Children age 13-18
+numchld,Discrete,Number of Children
+income_range,Discrete,Household income range
+gender,Nominal,"Gender (M = Male, F = Female, U = Unknown, J = Joint Account, unknown gender)"
+wealth1,Ordinal,Wealth Rating
+hit,Discrete,MOR Flag # hit (Mail Order Response). Indicates total number of known times the customer has responded to a mail order offer other than ACE's.
+mbcraft,Discrete,Buy Craft Hobby
+mbgarden,Discrete,Buy Gardening
+mbbooks,Discrete,Buy Books
+mbcolect,Discrete,Buy Collectables
+magfaml,Discrete,Buy General Family Mags
+magfem,Discrete,Buy Female Mags
+magmale,Discrete,Buy Sports Mags
+pubgardn,Discrete,Gardening Pubs
+pubculin,Discrete,Culinary Pubs
+pubhlth,Discrete,Health Pubs
+pubdoity,Discrete,Do It Yourself Pubs
+pubnewfn,Discrete,News / Finance Pubs
+pubphoto,Discrete,Photography Pubs
+pubopp,Discrete,Opportunity Seekers Pubs
+datasrce,Nominal,"Source of Overlay Data. Indicates which third-party data source the customer matched against (1 = mailSource, 2 = monsterMail, 3 = Both)"
+solp3,Nominal,SOLICIT LIMITATION CODE P3 (various codes indicating the number of solicitations per year)
+solih,Nominal,SOLICITATION LIMIT CODE IN HOUSE (various codes indicating the number of solicitations per year)
+major,Binary,"Major ($$) customer Flag (_ = Not a Major customer, X = Major customer)"
+wealth2,Ordinal,"Wealth Rating. Uses median family income and population statistics from each area to index relative wealth within each state. The segments are denoted 0-9, with 9 being the highest income group and zero being the lowest. Each rating has a different meaning within each state."
+geocode,Nominal,Geo Cluster Code indicating the level geography at which a record matches the census data. A nominal or symbolic field. Blank=No code has been assigned or did not match at any level.
+collect1,Binary,COLLECTABLE (Y/N)
+veterans,Binary,Veterans (Y/N)
+bible,Binary,Bible REadiNG (Y/N)
+catlg,Binary,SHOP BY CATALOG (Y/N)
+homee,Binary,WORK FROM HOME (Y/N)
+pets,Binary,HOUSEHOLD pets (Y/N)
+cdplay,Binary,CD PLAYER OWNERS (Y/N)
+stereo,Binary,Stereo/RECORDS/TAPES/CD (Y/N)
+pcowners,Binary,HOME PC OWNERS/USERS (Y/N)
+photo,Binary,Photography (Y/N)
+crafts,Binary,Crafts (Y/N)
+fisher,Binary,FISHING (Y/N)
+gardenin,Binary,Gardening (Y/N)
+boats,Binary,POWER BOATING (Y/N)
+walker,Binary,WALK FOR HEALTH (Y/N)
+kidstuff,Binary,BUYS CHILDREN'S PRODUCTS (Y/N)
+cards,Binary,STATIONARY/cards BUYER (Y/N)
+plates,Binary,PLATE COLLECTOR (Y/N)
+lifesrc,Nominal,"LIFE STYLE DATA SOURCE. Indicates source of the lifestyle variables listed above (1 = MATCHED ON mailSource ONLY, 2 = MATCHED ON POLK ONLY, 3 = MATCHED BOTH mailSource AND monsterMail)"
+pepstrfl,Binary,"Indicates PEP Star RFA Status (blank = Not considered to be a PEP Star, 'X' = Has PEP Star RFA Status)"
+cardprom,Discrete,"Lifetime number of card promotions received to date. Card promotions are promotion type FS, GK, TK, SK, NK, XK, UF, UU."
+maxadate,Date,"Date of the most recent promotion received (in YYMM, Year/Month format)"
+numprom,Discrete,Lifetime number of promotions received to date
+cardpm12,Discrete,Number of card promotions received in the last 12 months (in terms of calendar months translates into 9603-9702)
+numprm12,Discrete,Number of promotions received in the last 12 months (in terms of calendar months translates into 9603-9702)
+ramntall,Continuous,Dollar amount of lifetime gifts to date
+ngiftall,Discrete,Number of lifetime gifts to date
+cardgift,Discrete,Number of lifetime gifts to card promotions to date
+minramnt,Continuous,Dollar amount of smallest gift to date
+minrdate,Date,Date associated with the smallest gift to date
+maxramnt,Continuous,Dollar amount of largest gift to date
+maxrdate,Date,Date associated with the largest gift to date
+lastgift,Continuous,Dollar amount of most recent gift
+lastdate,Date,Date associated with the most recent gift
+fistdate,Date,Date of first gift
+nextdate,Date,Date of second gift
+timelag,Continuous,Number of months between first and second gift
+avggift,Continuous,Average dollar amount of gifts to date
+id,Identifier,Control number (unique record identifier)
+responded,Dependant,Target Variable: Binary Indicator for Response to 97NK Mailing
+amount,Dependant,Target Variable: Donation Amount (in $) associated with the Response to 97NK Mailing
+hphone_d,Binary,Indicator for presence of a published home phone number
+rfa_2r,Nominal,Recency code for rfa_2
+rfa_2f,Nominal,Frequency code for rfa_2
+rfa_2a,Nominal,Donation Amount code for rfa_2
+mdmaud_r,Nominal,Recency code for mdmaud
+mdmaud_f,Nominal,Frequency code for mdmaud
+mdmaud_a,Nominal,Donation Amount code for mdmaud
+cluster2,Nominal,Classic Cluster Code (a nominal symbolic field)
+geocode2,Nominal,County Size Code
+msa,Code,msa code of neighborhood
+adi,Code,adi code of neighborhood
+dma,Code,dma code of neighborhood
