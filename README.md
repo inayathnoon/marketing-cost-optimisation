@@ -1,7 +1,8 @@
 # marketing-cost-optimisation
 Data Science Case Study
 
-Overview: This case study is designed to test a real-world Data Science problem. You will be evaluated based upon:
+Overview: 
+This case study is designed to test a real-world Data Science problem. You will be evaluated based upon:
 Business understanding
 Data understanding
 Data preparation
@@ -10,19 +11,20 @@ Evaluation
 Code quality and reusability
 Presentation, both to a non-technical audience and communication with other data scientists. 
 
-Instructions
+Instructions:
 Review this document in its entirety. Immediately ask any questions that come up.
 Begin working on the case. You have up to 3 days to complete the case, however we think 2 days should be sufficient. 
 No later than 3 days from the start time, email back the entire set of case files and the files listed in the “Output You Are To Provide” section.
 
-Points to Consider
+Points to Consider:
 If you have questions, you may email the recruiter. We’ll do our best to respond ASAP. However, if we do not respond, then feel free to make a reasonable assumption. State this assumption in your presentation.
 There isn’t meant to be any tricks here. This is just a straightforward data analysis problem.
 Please do not discuss this case with anyone else. However, you may use any Internet resources for syntactical assistance only.
 Please complete this case using Python/PySpark notebooks.
 Ensure you can explain all of the steps of your process and code. You will be asked to present your process, code, and results as part of the interview process.
 
-Scenario: You are working for our non-profit arm, as a Data Scientist. We have volunteered to assist a charity to develop a tool to optimize their outreach efforts. Your objective is to determine which set of potential donors the charity should contact to maximize the profitability of a marketing campaign to solicit donations for the charity.
+Scenario: 
+You are working for our non-profit arm, as a Data Scientist. We have volunteered to assist a charity to develop a tool to optimize their outreach efforts. Your objective is to determine which set of potential donors the charity should contact to maximize the profitability of a marketing campaign to solicit donations for the charity.
 
 The cost of marketing to a particular potential donor varies per zip code. This cost is paid regardless of whether the potential donor responds to our marketing or not. This cost is specified in the file zipCodeMarketingCosts.csv.
 Only if a customer responds to our request, do we receive the donation amount. 
